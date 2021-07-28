@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <title>Order | Bethany's Pie Shop</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pies.html">Pies</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <aside>
+        <img src="images/logo.png" alt="Bethany's Pie Shop logo">
+    </aside>
+    <article>
+        <h1>Order</h1>
+        <form action="http://localhost:7071/api/post" method="post">
+            <div class="input-group">
+                <div>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="last-name">Last Name</label>
+                </div>
+                <div>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="address">Address</label>
+                </div>
+                <div>
+                    <input type="text" name="address" id="address">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="State">State</label>
+                </div>
+                <div>
+                    <select name="state" id="state ">
+                        <option value="" selected>[ Select One ]</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="California">California</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Texas">Texas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="postal-code">Postal Code</label>
+                </div>
+                <div>
+                    <input type="text" name="postal-code" id="postal-code">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="comments">Comments</label>
+                </div>
+                <div>
+                    <textarea
+                            name="comments"
+                            id="comments"
+                            cols="30"
+                            rows="10"
+                    ></textarea>
+                </div>
+            </div>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Order">
+
+        </form>
+    </article>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pies.html">Pies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
