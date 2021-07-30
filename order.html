@@ -40,6 +40,8 @@
         </div>
 
         <form action="http://localhost:7071/api/post" method="post">
+            <input type="hidden" id="pie-order" name="pie-order">
+
             <div class="input-group">
                 <div>
                     <label for="first-name">First Name</label>
@@ -130,6 +132,8 @@
             const pieOrder = JSON.parse(order);
             const pie = document.querySelector(".pie");
 
+            const orderInput = document.querySelector("#pie-order");
+
             const title = pie.querySelector(".title");
             const price = pie.querySelector(".price");
             const desc = pie.querySelector(".desc");
@@ -142,6 +146,7 @@
             img.setAttribute("src", `images/${pieOrder.id}.png`);
             img.setAttribute("alt", pieOrder.title);
 
+            orderInput.value = order;
         }
     })
 </script>
