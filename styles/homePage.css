@@ -17,3 +17,13 @@ h1 {
     font-size: 1.2em;
     padding: 10px;
 }
+
+.searchBox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+/*#weekly-promotions {*/
+/*    display: block;*/
+/*}*/

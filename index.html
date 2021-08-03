@@ -12,7 +12,7 @@
     <title>Bethany's Pie Shop</title>
 </head>
 <body>
-<header>
+<header id="mainHeader">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,65 +21,74 @@
         </ul>
     </nav>
 </header>
-<main>
-    <aside>
+
+<div>
+    <aside id="leftMenu">
         <img src="images/logo.png" alt="Bethany's Pie Shop logo">
-    </aside>
-    <article>
-        <img src="images/banner.png" class="banner" alt="Bethany's Pie Shop Banner">
-        <h1 class="welcome-text">Welcome to Bethany's Pie Shop!</h1>
-        <p class="sub-title">
-            From pecan to plum, our pies are made in with the warmth
-            and traditional techniques.
-            Take a moment to
-            <a href="pies.html">Brouse our pies</a>
-            and see which of our delectable
-            deserts are soon to arrive on your doorstep.
-        </p>
-        <h2>Our History</h2>
-        <p>
-            For many years, <b>Bethany</b> has been baking the most delicious pies at her home.
-            In 2013, we opened our first store in Brussels (Belgium) in a cosy little street
-            near the Grand Market. People from all over the world fell in love with the soft
-            cakes, heavenly cheese cakes, spicy apple pies... The store became a success in no
-            time.
-
-            <br>
-            <br>
-            In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved
-            into a larger building. After receiving many requests, it became clear that our
-            next step was making it possible to order pies from the comfort of your own home
-            and from anywhere in the world. You are now looking at the result of this: our very
-            own webstore, making it possible to order Bethany's delicious pies whenever you
-            feel like it!
-        </p>
-        <p>
-            Bethany is famous for using only the best ingredients. This way, we can make sure
-            that our pies are absolutely the best.
-        </p>
-
-        <hr>
-
-        <h3>
-            Our Weekly Promotions
-        </h3>
-        <h4>Cheese cakes</h4>
-        <p>$12.95 - serves 4</p>
-        <br>
-        <img src="images/cheesecake.jpg" alt="cheesecake" width="500" height="300">
-        <br>
-
-        <small>2020 Bethany's Pie Shop - All rights reserved</small>
-    </article>
-</main>
-<footer>
-    <nav>
+        <h4>Browse Our Pies</h4>
+        <input type="search" class="searchBox" placeholder="Search our store">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="pies.html">Pies</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+    </aside>
+
+    <main id="main">
+        <article>
+            <img src="images/banner.png" class="banner" alt="Bethany's Pie Shop Banner">
+            <h1 class="welcome-text">Welcome to Bethany's Pie Shop!</h1>
+            <p class="sub-title">
+                From pecan to plum, our pies are made in with the warmth
+                and traditional techniques.
+                Take a moment to
+                <a href="pies.html">Brouse our pies</a>
+                and see which of our delectable
+                deserts are soon to arrive on your doorstep.
+            </p>
+            <h2>Our History</h2>
+            <p>
+                For many years, <b>Bethany</b> has been baking the most delicious pies at
+                her home.
+                In 2013, we opened our first store in Brussels (Belgium) in a cosy little street
+                near the Grand Market. People from all over the world fell in love with the soft
+                cakes, heavenly cheese cakes, spicy apple pies...
+                The store became a success in no time.
+
+                <br>
+                <br>
+                In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved
+                into a larger building. After receiving many requests, it became clear that our
+                next step was making it possible to order pies from the comfort of your own home
+                and from anywhere in the world. You are now looking at the result of this: our very
+                own webstore, making it possible to order Bethany's delicious pies whenever you
+                feel like it!
+            </p>
+            <p>
+                Bethany is famous for using only the best ingredients. This way, we can make sure
+                that our pies are absolutely the best.
+            </p>
+
+            <hr>
+            <section id="weekly-promotions">
+                <h3>
+                    Our Weekly Promotions
+                </h3>
+                <h4>Cheese cakes</h4>
+                <p>$12.95 - serves 4</p>
+                <br>
+                <img src="images/cheesecake.jpg" alt="cheesecake" width="500" height="300">
+                <br>
+            </section>
+        </article>
+
+    </main>
+
+</div>
+
+<footer>
+    <p>Our address is <address>Bethany's Pie Shop - 555 Bakery St, Minneapolis MN</address></p>
+    <small>2020 Bethany's Pie Shop - All rights reserved</small>
 </footer>
 </body>
 </html>
