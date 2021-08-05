@@ -149,3 +149,17 @@ article {
     border-radius: 3px;
     color: #fff;
 }
+
+.searchBox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+/*#weekly-promotions {*/
+/*    display: block;*/
+/*}*/
+
+aside ul, aside li {
+    text-align: left;
+}
