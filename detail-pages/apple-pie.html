@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/site.css" type="text/css">
     <link rel="stylesheet" href="../styles/detail-pages.css" type="text/css">
     <title>Apple Pie Details | Bethany's Pie Shop</title>
+    <script src="/scripts/favorite-pies.js"></script>
 </head>
 <body>
 <header id="mainHeader">
@@ -49,6 +50,15 @@
                 <figcaption>Our world-famous apple pie</figcaption>
             </figure>
 
+            <button
+                    onclick="save('apple-pie')"
+                    id="fav-btn"
+                    type="button"
+                    data-fav="apple-pie"
+            >
+                Save as Favorite
+            </button>
+            <span id="favorite"></span>
 
             <div style="background-color:#f8f4f1;">
                 <strong>Price: $12.95</strong>
@@ -73,7 +83,7 @@
                 <p>
                 <blockquote>
                     This recipe has been in our family for generations.
-                We hope you enjoy this pie as we do - Bethany
+                    We hope you enjoy this pie as we do - Bethany
                 </blockquote>
                 </p>
 
