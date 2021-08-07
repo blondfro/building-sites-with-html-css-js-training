@@ -14,106 +14,125 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="pies.html">Pies</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="pies-overview.html">All Pies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 </header>
-<main>
-    <aside>
-        <img src="images/logo.png" alt="Bethany's Pie Shop logo">
+
+<div>
+    <aside id="leftMenu">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Bethany's Pie Shop logo">
+        </a>
+        <h4>Browse Our Pies</h4>
+        <input type="search" class="searchBox" placeholder="Search our store">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pies-overview.html">All Pies</a></li>
+            <li><a href="/category-pages/cheesecakes.html">Cheese cakes</a></li>
+            <li><a href="/category-pages/fruit-pies.html">Fruit pies</a></li>
+            <li><a href="/category-pages/seasonal-pies.html">Seasonal pies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </aside>
-    <article>
-        <h1>Order</h1>
 
-        <div class="pie">
-            <img src="" alt="">
-            <div class="columns">
-                <div class="title">
+    <main>
 
+        <article>
+            <h1>Order</h1>
+
+            <div class="pie">
+                <img src="" alt="">
+                <div class="columns">
+                    <div class="title">
+
+                    </div>
+                    <div class="price">
+
+                    </div>
                 </div>
-                <div class="price">
-
-                </div>
-            </div>
-            <p class="desc"></p>
-        </div>
-
-        <form action="" method="post">
-            <input type="hidden" id="pie-order" name="pie-order">
-            <input type="hidden" id="location" name="location">
-
-            <div class="input-group">
-                <div>
-                    <label for="first-name">First Name</label>
-                </div>
-                <div>
-                    <input type="text" name="first-name" id="first-name">
-                </div>
+                <p class="desc"></p>
             </div>
 
-            <div class="input-group">
-                <div>
-                    <label for="last-name">Last Name</label>
-                </div>
-                <div>
-                    <input type="text" name="last-name" id="last-name">
-                </div>
-            </div>
+            <form action="" method="post">
+                <input type="hidden" id="pie-order" name="pie-order">
+                <input type="hidden" id="location" name="location">
 
-            <div class="input-group">
-                <div>
-                    <label for="address">Address</label>
+                <div class="input-group">
+                    <div>
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
                 </div>
-                <div>
-                    <input type="text" name="address" id="address">
-                </div>
-            </div>
 
-            <div class="input-group">
-                <div>
-                    <label for="state">State</label>
+                <div class="input-group">
+                    <div>
+                        <label for="last-name">Last Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
                 </div>
-                <div>
-                    <select name="state" id="state">
-                        <option value="" selected>[ Select One ]</option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="California">California</option>
-                        <option value="Minnesota">Minnesota</option>
-                        <option value="Texas">Texas</option>
-                    </select>
-                </div>
-            </div>
 
-            <div class="input-group">
-                <div>
-                    <label for="postal-code">Postal Code</label>
+                <div class="input-group">
+                    <div>
+                        <label for="address">Address</label>
+                    </div>
+                    <div>
+                        <input type="text" name="address" id="address">
+                    </div>
                 </div>
-                <div>
-                    <input type="text" name="postal-code" id="postal-code">
-                </div>
-            </div>
 
-            <div class="input-group">
-                <div>
-                    <label for="comments">Comments</label>
+                <div class="input-group">
+                    <div>
+                        <label for="state">State</label>
+                    </div>
+                    <div>
+                        <select name="state" id="state">
+                            <option value="" selected>[ Select One ]</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="California">California</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Texas">Texas</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
+
+                <div class="input-group">
+                    <div>
+                        <label for="postal-code">Postal Code</label>
+                    </div>
+                    <div>
+                        <input type="text" name="postal-code" id="postal-code">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div>
+                        <label for="comments">Comments</label>
+                    </div>
+                    <div>
                     <textarea
                             name="comments"
                             id="comments"
                             cols="30"
                             rows="10"
                     ></textarea>
+                    </div>
                 </div>
-            </div>
 
-            <input type="reset" value="Reset">
-            <input type="submit" value="Order">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Order">
 
-        </form>
-    </article>
-</main>
+            </form>
+        </article>
+    </main>
+</div>
+
+
 <footer>
     <nav>
         <ul>
@@ -122,6 +141,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <p>Our address is <address>Bethany's Pie Shop - 555 Bakery St, Minneapolis MN</address></p>
+    <small> &copy; 2020 Bethany's Pie Shop - All rights reserved</small>
 </footer>
 </body>
 <script src="scripts/order.js"></script>
