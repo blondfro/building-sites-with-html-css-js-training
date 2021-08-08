@@ -29,8 +29,22 @@
         <a href="index.html">
             <img src="images/logo.png" alt="Bethany's Pie Shop logo">
         </a>
-        <h4>Browse Our Pies</h4>
-        <input type="search" class="searchBox" placeholder="Search our store">
+
+        <form
+                action="pies-overview.html"
+                enctype="application/x-www-form-urlencoded"
+                method="GET"
+        >
+            <label for="search">Search Pies</label>
+            <input
+                    name="search"
+                    id="search"
+                    type="search"
+                    class="searchBox"
+                    placeholder="Search our store">
+            <input type="submit">
+        </form>
+        <h4>Browse by Category</h4>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="pies-overview.html">All Pies</a></li>
