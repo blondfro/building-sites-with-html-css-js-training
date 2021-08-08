@@ -25,14 +25,28 @@
         <a href="index.html">
             <img src="images/logo.png" alt="Bethany's Pie Shop logo">
         </a>
-        <h4>Browse Our Pies</h4>
-        <input type="search" class="searchBox" placeholder="Search our store">
+
+        <form
+                action="pies-overview.html"
+                enctype="application/x-www-form-urlencoded"
+                method="GET"
+        >
+            <label for="search">Search Pies</label>
+            <input
+                    name="search"
+                    id="search"
+                    type="search"
+                    class="searchBox"
+                    placeholder="Search our store">
+            <input type="submit">
+        </form>
+        <h4>Browse by Category</h4>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="pies-overview.html">All Pies</a></li>
-            <li><a href="/category-pages/cheesecakes.html">Cheese cakes</a></li>
-            <li><a href="/category-pages/fruit-pies.html">Fruit pies</a></li>
-            <li><a href="/category-pages/seasonal-pies.html">Seasonal pies</a></li>
+            <li><a href="./category-pages/cheesecakes.html">Cheese cakes</a></li>
+            <li><a href="./category-pages/fruit-pies.html">Fruit pies</a></li>
+            <li><a href="./category-pages/seasonal-pies.html">Seasonal pies</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </aside>
@@ -40,6 +54,102 @@
         <article>
             <h1>Contact</h1>
             <p>We are always glad to hear from you!</p>
+            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="customerName">Your name:</label>
+                     <input tabindex="1" id="customerName" type="text" name="customerName"> <br>
+                    <label for="customerEmail">
+                        Your email:
+                    </label>
+                    <input tabindex="2" id="customerEmail" type="email" name="customerEmail"> <br>
+                    <label for="customerPhone">
+                        Your phone:
+                    </label>
+                    <input tabindex="3" id="customerPhone" type="tel" name="customerPhone"> <br>
+
+                    Phone Type:
+                    <label>
+                        <input type="radio" name="phoneType" value="cell">Cell
+                    </label>
+                    <label>
+                        <input type="radio" name="phoneType" value="work">Work
+                    </label>
+                    <label>
+                        <input type="radio" name="phoneType" value="home">Home
+                    </label>
+
+
+                    <br>
+
+                    Preferred Contact:
+                    <label>
+                        <input type="checkbox" name="okToContact" value="phone"> by phone
+                    </label>
+                    <label>
+                        <input type="checkbox" name="okToContact" value="email"> by email
+                    </label>
+
+                </fieldset>
+
+                <input type="hidden" name="source" value="ContactForm">
+
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="commentSection">Comments</label>
+                    <textarea
+                            tabindex="4"
+                            name="feedbackText"
+                            id="commentSection"
+                            cols="40"
+                            rows="3"></textarea>
+                    <br>
+                    <br>
+                    Feedback type:
+                    <label for="feedbackSelect"></label>
+                    <select
+                            tabindex="5"
+                            itemid="feedbackSelect"
+                            name="feedbackSelect"
+                            id="feedbackSelect"
+                            multiple
+                            size="6">
+                    <optgroup label="Stores">
+                        <option value="webStore">Web Store</option>
+                        <option value="store">Physical Store</option>
+                    </optgroup>
+
+                    <option value="webTech">Website Issue</option>
+                    <option value="general">General Issue</option>
+                </select>
+                    <br>
+                    <br>
+                    <label>
+                        Severity:
+                        <input tabindex="6" type="range" name="severityRange">
+                    </label>
+                    <label>
+                        Severity:
+                        <input tabindex="7" type="number" name="severityValue">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        Issue Date:
+                        <input tabindex="8" type="date" name="severityDate">
+                    </label>
+                    <label>
+                        Issue Time:
+                        <input tabindex="9" type="time" name="severityTime">
+                    </label>
+
+                    <br>
+                </fieldset>
+                <br>
+
+
+                <input tabindex="10" type="submit" value="Send Contact">
+            </form>
             <p>
                 <a href="mailto:bethany@bethanyspieshop.com?subject=Intered%20in%20Pies">
                     Email us
@@ -51,7 +161,12 @@
 </div>
 
 <footer>
-    <p>Our address is <address>Bethany's Pie Shop - 555 Bakery St, Minneapolis MN</address></p>
+    <p>
+        Our address is
+        <address>
+            Bethany's Pie Shop - 555 Bakery St, Minneapolis MN
+        </address>
+    </p>
     <small> &copy; 2020 Bethany's Pie Shop - All rights reserved</small>
 </footer>
 </body>
