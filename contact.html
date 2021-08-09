@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/site.css" type="text/css">
+    <link rel="stylesheet" href="styles/contact.css" type="text/css">
     <title>Contact | Bethany's Pie Shop</title>
 </head>
 <body>
@@ -57,38 +58,51 @@
             <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label for="customerName">Your name:</label>
-                     <input tabindex="1" id="customerName" type="text" name="customerName"> <br>
-                    <label for="customerEmail">
-                        Your email:
-                    </label>
-                    <input tabindex="2" id="customerEmail" type="email" name="customerEmail"> <br>
-                    <label for="customerPhone">
-                        Your phone:
-                    </label>
-                    <input tabindex="3" id="customerPhone" type="tel" name="customerPhone"> <br>
+                    <p>
+                        <label for="customerName">Your name:</label>
+                        <input tabindex="1" id="customerName" type="text" name="customerName">
+                    </p>
 
-                    Phone Type:
-                    <label>
-                        <input type="radio" name="phoneType" value="cell">Cell
-                    </label>
-                    <label>
-                        <input type="radio" name="phoneType" value="work">Work
-                    </label>
-                    <label>
-                        <input type="radio" name="phoneType" value="home">Home
-                    </label>
+                    <p>
+                        <label for="customerEmail">
+                            Your email:
+                        </label>
+                        <input tabindex="2" id="customerEmail" type="email" name="customerEmail">
+                    </p>
+                    <p>
+                        <label for="customerPhone">
+                            Your phone:
+                        </label>
+                        <input tabindex="3" id="customerPhone" type="tel" name="customerPhone">
+                    </p>
 
+                    <p>
+                        <label> Phone Type </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="phoneType" value="cell">Cell
+                        </label>
+                        <label>
+                            <input type="radio" name="phoneType" value="work">Work
+                        </label>
+                        <label>
+                            <input type="radio" name="phoneType" value="home">Home
+                        </label>
+                    </p>
 
-                    <br>
+                    <p>
+                        <label> Preferred Contact: </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="okToContact" value="phone"> by phone
+                        </label>
+                        <label>
+                            <input type="checkbox" name="okToContact" value="email"> by email
+                        </label>
+                    </p>
 
-                    Preferred Contact:
-                    <label>
-                        <input type="checkbox" name="okToContact" value="phone"> by phone
-                    </label>
-                    <label>
-                        <input type="checkbox" name="okToContact" value="email"> by email
-                    </label>
 
                 </fieldset>
 
@@ -96,57 +110,57 @@
 
                 <fieldset>
                     <legend>Feedback</legend>
-                    <label for="commentSection">Comments</label>
-                    <textarea
-                            tabindex="4"
-                            name="feedbackText"
-                            id="commentSection"
-                            cols="40"
-                            rows="3"></textarea>
-                    <br>
-                    <br>
-                    Feedback type:
-                    <label for="feedbackSelect"></label>
-                    <select
-                            tabindex="5"
-                            itemid="feedbackSelect"
-                            name="feedbackSelect"
-                            id="feedbackSelect"
-                            multiple
-                            size="6">
-                    <optgroup label="Stores">
-                        <option value="webStore">Web Store</option>
-                        <option value="store">Physical Store</option>
-                    </optgroup>
+                    <p>
+                        <label for="commentSection">Comments</label>
+                            <textarea
+                                    tabindex="4"
+                                    name="feedbackText"
+                                    id="commentSection"
+                                    cols="40"
+                                    rows="3"></textarea>
 
-                    <option value="webTech">Website Issue</option>
-                    <option value="general">General Issue</option>
-                </select>
-                    <br>
-                    <br>
-                    <label>
-                        Severity:
-                        <input tabindex="6" type="range" name="severityRange">
-                    </label>
-                    <label>
-                        Severity:
-                        <input tabindex="7" type="number" name="severityValue">
-                    </label>
-                    <br>
-                    <br>
-                    <label>
-                        Issue Date:
-                        <input tabindex="8" type="date" name="severityDate">
-                    </label>
-                    <label>
-                        Issue Time:
-                        <input tabindex="9" type="time" name="severityTime">
-                    </label>
+                    </p>
 
-                    <br>
+                    <p>
+                        <label for="feedbackSelect">Feedback type:</label>
+                        <select
+                                tabindex="5"
+                                itemid="feedbackSelect"
+                                name="feedbackSelect"
+                                id="feedbackSelect"
+                                multiple
+                                size="6">
+                            <optgroup label="Stores">
+                                <option value="webStore">Web Store</option>
+                                <option value="store">Physical Store</option>
+                            </optgroup>
+
+                            <option value="webTech">Website Issue</option>
+                            <option value="general">General Issue</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="severityRange">Severity: </label>
+                        <input tabindex="6" type="range" id="severityRange" name="severityRange">
+                    </p>
+
+                    <p>
+                        <label for="severityValue">Severity:</label>
+                        <input tabindex="7" type="number" id="severityValue" name="severityValue">
+                    </p>
+
+                    <p>
+                        <label for="severityDate">Issue Date:</label>
+                        <input tabindex="8" type="date" id="severityDate" name="severityDate">
+                    </p>
+
+                    <p>
+                        <label for="severityTime">Issue Time:</label>
+                        <input tabindex="9" type="time" id="severityTime" name="severityTime">
+                    </p>
+
                 </fieldset>
-                <br>
-
 
                 <input tabindex="10" type="submit" value="Send Contact">
             </form>

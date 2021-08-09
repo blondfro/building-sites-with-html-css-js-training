@@ -1,0 +1,18 @@
+fieldset {
+    border-color: #a593c2;
+    border-width: 3px;
+    border-style: solid;
+}
+
+fieldset>legend {
+    color: #a593c2;
+}
+
+p>label {
+    display: block;
+}
+
+input, textarea, select {
+    border-radius: 7px;
+}
+
