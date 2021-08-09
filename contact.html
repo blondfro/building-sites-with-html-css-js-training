@@ -59,21 +59,38 @@
                 <fieldset>
                     <legend>Contact Information</legend>
                     <p>
-                        <label for="customerName">Your name:</label>
-                        <input tabindex="1" id="customerName" type="text" name="customerName">
+                        <label for="customerName">* Your name:</label>
+                        <input
+                                required
+                                minlength="10"
+                                maxlength="75"
+                                tabindex="1"
+                                id="customerName"
+                                type="text"
+                                name="customerName">
                     </p>
 
                     <p>
                         <label for="customerEmail">
-                            Your email:
+                            * Your email:
                         </label>
-                        <input tabindex="2" id="customerEmail" type="email" name="customerEmail">
+                        <input
+                                required
+                                tabindex="2"
+                                id="customerEmail"
+                                type="email"
+                                name="customerEmail">
                     </p>
                     <p>
                         <label for="customerPhone">
                             Your phone:
                         </label>
-                        <input tabindex="3" id="customerPhone" type="tel" name="customerPhone">
+                        <input
+                                tabindex="3"
+                                pattern="\(\d{3}\) \d{3}-\d{4}"
+                                id="customerPhone"
+                                type="tel"
+                                name="customerPhone">
                     </p>
 
                     <p>
@@ -113,6 +130,9 @@
                     <p>
                         <label for="commentSection">Comments</label>
                             <textarea
+                                    required
+                                    minlength="10"
+                                    maxlength="200"
                                     tabindex="4"
                                     name="feedbackText"
                                     id="commentSection"

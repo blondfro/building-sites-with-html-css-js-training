@@ -16,3 +16,19 @@ input, textarea, select {
     border-radius: 7px;
 }
 
+input:valid, textarea:valid {
+    border-color: green;
+}
+
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:focus:invalid {
+    border-color: black;
+}
+
+input:required, textarea:required {
+    border-style: dashed;
+}
+
