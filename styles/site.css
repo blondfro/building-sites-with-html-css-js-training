@@ -17,6 +17,8 @@ body {
 
 p {
     margin: .5em 0 .5em 0;
+    font-size: 18px;
+
 }
 
 header {
@@ -41,18 +43,18 @@ nav a:visited, nav a:link {
     text-decoration: none;
 }
 
-nav > ul {
+nav>ul {
     display: inline;
     padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
     display: inline-block;
     list-style: none;
     margin: 0 5px 0 5px;
 }
 
-nav > img {
+nav>img {
     width: 40px;
     padding: 0;
     margin: 0;
@@ -160,6 +162,22 @@ article {
 /*    display: block;*/
 /*}*/
 
-aside ul, aside li {
+aside>ul, aside>li {
     text-align: left;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+aside>h4 {
+    text-align: center;
+}
+
+
+figcaption {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: .1em;
+    text-transform: capitalize;
 }
