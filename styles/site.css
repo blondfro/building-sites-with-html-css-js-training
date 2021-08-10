@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif, Verdana, Tahoma, Geneva;
+    font-family: "Lato", 'Segoe UI', Arial, Helvetica, sans-serif, Verdana, Tahoma, Geneva;
     background-color: #e6e4d9;
     margin-top: 0px;
     margin-left: auto;
@@ -180,4 +180,6 @@ figcaption {
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: .1em;
     text-transform: capitalize;
+    font-family: "Cookie", Verdana, Arial, sans-serif;
+    font-weight: normal;
 }
