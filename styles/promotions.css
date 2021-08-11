@@ -1,3 +1,22 @@
-h1, h2, h3, h4, h5, h6 {
+.promotion {
+    background-color: #23cea6;
+    color: white;
+    width: 450px;
+    text-align: center;
+    border: 2px solid #a693c2;
+    padding: 20px;
+    margin-bottom: 50px;
+}
 
+.promotion>img {
+    width: 75%;
+}
+
+.promotion>h2 {
+    color: white;
+}
+
+.promotion-purple {
+    background-color: #a693c2;
+    border-color: #23cea6;
 }
