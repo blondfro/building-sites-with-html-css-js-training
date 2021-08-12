@@ -168,6 +168,15 @@ aside>ul, aside>li {
     line-height: 1.5em;
 }
 
+aside>ul>li>a {
+    color: #1fac8c;
+}
+
+aside>ul>li>a:hover {
+    color: #167464;
+}
+
+
 aside>h4 {
     text-align: center;
 }
@@ -182,5 +191,16 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
     font-family: "Cookie", Verdana, Arial, sans-serif;
     font-weight: normal;
-    color: #a693c2;
+    color: black;
+}
+
+#sidebar-heading {
+    font-size: 30px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #cdeae1;
+}
+tr:nth-of-type(even) {
+    background-color: #eae5f1;
 }
