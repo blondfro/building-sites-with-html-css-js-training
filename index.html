@@ -23,16 +23,25 @@
     <title>Bethany's Pie Shop</title>
 </head>
 <body>
-<header id="mainHeader">
-    <nav>
-        <img src="/images/cake.svg" alt="Bethany's pies logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pies-overview.html">All Pies</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+<header id="mainHeader" class="clear-fix">
+    <div class="row limited">
+        <section class="column small-12">
+            <img src="/images/cake.svg" alt="Bethany's pies logo">
+            <h1>Bethany's</h1>
+            <h2>Fantastic Pie Shop</h2>
+        </section>
+    </div>
+    <!--    end of row-->
 </header>
+
+<nav>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pies-overview.html">All Pies</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
 
 <div>
     <aside id="leftMenu">
@@ -125,11 +134,41 @@
 
 </div>
 
-<footer>
-    <p>Our address is
-    <address>Bethany's Pie Shop - 555 Bakery St, Minneapolis MN</address>
-    </p>
-    <small> &copy; 2020 Bethany's Pie Shop - All rights reserved</small>
+<footer class="clear-fix">
+    <div class="row limited">
+        <section class="column small-12 med-6 lg-3">
+            <h2>Location</h2>
+            <ul>
+                <li>Bethany's Pie Shop</li>
+                <li>555 Bakery St,</li>
+                <li>Minneapolis MN</li>
+            </ul>
+        </section>
+        <section class="column small-12 med-6 lg-3">
+            <h2>Company</h2>
+            <ul>
+                <li>Catering</li>
+                <li>Delivery</li>
+                <li>Swag Shop</li>
+                <li>Support</li>
+            </ul>
+        </section>
+        <section class="column small-12 med-6 lg-3">
+            <h2>Social</h2>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </section>
+        <section class="column small-12 med-6 lg-3">
+            <h2>About Us</h2>
+            <img src="images/logo-small.png" alt="logo">
+            <small> &copy; 2020 Bethany's Pie Shop - &bull; All rights reserved</small>
+        </section>
+    </div>
+    <!--     end of row -->
+
 </footer>
 </body>
 </html>
