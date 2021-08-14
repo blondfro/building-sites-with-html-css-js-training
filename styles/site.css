@@ -1,7 +1,16 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
 * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
 }
+
+
 
 html, body {
     height: 100%;
@@ -9,6 +18,8 @@ html, body {
 
 body {
     font-family: "Lato", 'Segoe UI', Arial, Helvetica, sans-serif, Verdana, Tahoma, Geneva;
+    font-size: 16px;
+    font-weight: 300;
     background-color: #e6e4d9;
     margin-top: 0px;
     margin-left: auto;
@@ -189,7 +200,7 @@ figcaption {
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: .1em;
     text-transform: capitalize;
-    font-family: "Cookie", Verdana, Arial, sans-serif;
+    font-family: "Lato", Verdana, Arial, sans-serif;
     font-weight: normal;
     color: black;
 }
