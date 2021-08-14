@@ -137,7 +137,10 @@ nav ul {
     display: none;
 }
 
-
+main img {
+    width: 100%;
+    height: auto;
+}
 
 
 
