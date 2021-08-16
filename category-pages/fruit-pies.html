@@ -3,36 +3,123 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Fruit Pies | Bethany's Pie Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Bethany's Pie Shop">
     <meta name="description" content="Store front for Bethany's Pie Shop">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
             href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital@0;1&display=swap"
             rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="../styles/site.css" type="text/css">
+    <link rel="stylesheet" href="../styles/medium.css" type="text/css">
+    <link rel="stylesheet" href="../styles/large.css" type="text/css">
     <link rel="stylesheet" href="../styles/category-pages.css" type="text/css">
-
-
+    <title>Bethany's Pie Shop</title>
 </head>
-
 <body>
-<header id="mainheader">
-    <nav>
-        <img src="/images/cake.svg" alt="Bethany's pies logo">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pies-overview.html">All Pies</a></li>
-            <li><a href="../contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+<header id="mainHeader" class="clear-fix">
+    <div class="row limited">
+        <section class="column small-12">
+            <img src="/images/cake.svg" alt="Bethany's pies logo">
+            <h1>Bethany's</h1>
+            <h2>Fantastic Pie Shop</h2>
+        </section>
+    </div>
+    <!--    end of row-->
 </header>
 
-    <div>
+<nav class="clear-fix">
+    <div class="row limited">
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primary-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pies-overview.html">All Pies</a></li>
+            <li><a class="active" href="fruit-pies.html">Fruit Pies</a></li>
+            <li><a href="../promotions.html">Promotions</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<main id="main" class="clear-fix">
+
+    <div class="row limited">
+        <section class="column small-12">
+            <h1>Fruit Pies</h1>
+        </section>
+    </div>
+    <!-- end row -->
+
+    <div class="row limited">
+        <section class="column small-6 med-4 lg-3">
+            <a href="../detail-pages/apple-pie.html">
+                <h3>Apple</h3>
+                <img src="../images/products/apple-pie-small.jpg" alt="apple pie">
+                <p>$14.95</p>
+            </a>
+
+        </section>
+        <section class="column small-6 med-4 lg-3">
+            <a href="">
+                <h3>Cherry</h3>
+                <img src="../images/products/cherry-pie-small.jpg" alt="cherry pie">
+                <p>$18.97</p>
+            </a>
+
+        </section>
+        <section class="column small-6 med-4 lg-3">
+            <a href="">
+                <h3>Cranberry</h3>
+                <img src="../images/products/cranberry-pie-small.jpg" alt="cranberry cheesecake">
+                <p>$18.97</p>
+            </a>
+
+        </section>
+        <section class="column small-6 med-4 lg-3">
+            <a href="">
+                <h3>Peach</h3>
+                <img src="../images/products/peach-pie-small.jpg" alt="peach pie">
+                <p>$18.97</p>
+            </a>
+
+        </section>
+        <section class="column small-6 med-4 lg-3">
+            <a href="">
+                <h3>Pumpkin</h3>
+                <img src="../images/products/pumpkin-pie-small.jpg" alt="pumpkin pie">
+                <p>$14.97</p>
+            </a>
+
+        </section>
+        <section class="column small-6 med-4 lg-3">
+            <a href="">
+                <h3>Rhubarb</h3>
+                <img src="../images/products/rhubarb-pie-small.jpg" alt="rhubarb pie">
+                <p>$21.97</p>
+            </a>
+
+        </section>
+        <section class="column small-6 med-4 lg-3">
+            <a href="">
+                <h3>Strawberry</h3>
+                <img src="../images/products/strawberry-pie-small.jpg" alt="strawberry pie">
+                <p>$120.97</p>
+            </a>
+        </section>
+    </div>
+    <!-- end row -->
+</main>
+
+
         <aside id="leftmenu">
             <a href="../index.html">
                 <img src="../images/logo.png" alt="Bethany's Pie Shop logo">
@@ -49,75 +136,110 @@
             <input type="search" class="searchbox" placeholder="Search our store" />
 
         </aside>
-        <main id="main">
-            <table >
-                <caption>
-                    Our delicious selection of pies for you to enjoy!
-                </caption>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Pie name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../images/products/apple-pie-small.jpg" width="100"></td>
-                        <td>Apple pie</td>
-                        <td>Our famous apple pie</td>
-                        <td>$14.95</td>
-                        <td><a href="applepie.html" target="_blank">View details</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/products/cranberry-pie-small.jpg" width="100"></td>
-                        <td>Cranberry pie</td>
-                        <td>A Christmas favorite</td>
-                        <td>$18.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/products/cherry-pie-small.jpg" width="100"></td>
-                        <td>Cherry pie</td>
-                        <td>A summer classic!</td>
-                        <td>$18.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/products/peach-pie-small.jpg" width="100"></td>
-                        <td>Peach pie</td>
-                        <td>Sweet as peach</td>
-                        <td>$18.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/products/rhubarb-pie-small.jpg" width="100"></td>
-                        <td>Rhubarb Pie</td>
-                        <td>My God, so sweet!</td>
-                        <td>$21.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/products/strawberry-pie-small.jpg" width="100"></td>
-                        <td>Strawberry Pie</td>
-                        <td>Our delicious strawberry pie!</td>
-                        <td>$18.95</td>
-                        <td>View details</td>
-                    </tr>
-                </tbody>
-            </table>
+<!--            <table >-->
+<!--                <caption>-->
+<!--                    Our delicious selection of pies for you to enjoy!-->
+<!--                </caption>-->
+<!--                <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Image</th>-->
+<!--                        <th>Pie name</th>-->
+<!--                        <th>Description</th>-->
+<!--                        <th>Price</th>-->
+<!--                        <th>Details</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                    <tr>-->
+<!--                        <td><img src="../images/products/apple-pie-small.jpg" width="100"></td>-->
+<!--                        <td>Apple pie</td>-->
+<!--                        <td>Our famous apple pie</td>-->
+<!--                        <td>$14.95</td>-->
+<!--                        <td>-->
+<!--                            <a-->
+<!--                                href="../detail-pages/apple-pie.html"-->
+<!--                                target="_blank">-->
+<!--                            View details-->
+<!--                            </a>-->
+<!--                        </td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td><img src="../images/products/cranberry-pie-small.jpg" width="100"></td>-->
+<!--                        <td>Cranberry pie</td>-->
+<!--                        <td>A Christmas favorite</td>-->
+<!--                        <td>$18.95</td>-->
+<!--                        <td>View details</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td><img src="../images/products/cherry-pie-small.jpg" width="100"></td>-->
+<!--                        <td>Cherry pie</td>-->
+<!--                        <td>A summer classic!</td>-->
+<!--                        <td>$18.95</td>-->
+<!--                        <td>View details</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td><img src="../images/products/peach-pie-small.jpg" width="100"></td>-->
+<!--                        <td>Peach pie</td>-->
+<!--                        <td>Sweet as peach</td>-->
+<!--                        <td>$18.95</td>-->
+<!--                        <td>View details</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td><img src="../images/products/rhubarb-pie-small.jpg" width="100"></td>-->
+<!--                        <td>Rhubarb Pie</td>-->
+<!--                        <td>My God, so sweet!</td>-->
+<!--                        <td>$21.95</td>-->
+<!--                        <td>View details</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td><img src="../images/products/strawberry-pie-small.jpg" width="100"></td>-->
+<!--                        <td>Strawberry Pie</td>-->
+<!--                        <td>Our delicious strawberry pie!</td>-->
+<!--                        <td>$18.95</td>-->
+<!--                        <td>View details</td>-->
+<!--                    </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
 
-          
-        </main>
-        <footer>
-            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
-            </p>
-            <small>2020 Bethany's Pie Shop - All rights reserved</small>
+
+        <footer class="clear-fix">
+            <div class="row limited">
+                <section class="column small-12 med-6 lg-3">
+                    <h2>Location</h2>
+                    <ul>
+                        <li>Bethany's Pie Shop</li>
+                        <li>555 Bakery St,</li>
+                        <li>Minneapolis MN</li>
+                    </ul>
+                </section>
+                <section class="column small-12 med-6 lg-3">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>Catering</li>
+                        <li>Delivery</li>
+                        <li>Swag Shop</li>
+                        <li>Support</li>
+                    </ul>
+                </section>
+                <section class="column small-12 med-6 lg-3">
+                    <h2>Social</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </section>
+                <section class="column small-12 med-6 lg-3">
+                    <h2>About Us</h2>
+                    <img src="../images/logo-small.png" alt="logo">
+                    <small> &copy; 2020 Bethany's Pie Shop - &bull; All rights reserved</small>
+                </section>
+            </div>
+            <!--     end of row -->
+
         </footer>
-    </div>
 
+<script src="/scripts/menuToggle.js"></script>
 </body>
 
 </html>
