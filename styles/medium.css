@@ -23,13 +23,31 @@
         float: left;
     }
 
+
+    .med-10 {
+        width: 83.3333%;
+    }
     .med-6 {
         width: 50%;
     }
     .med-4 {
         width: 33.33333%;
     }
+    .med-2 {
+        width: 16.6666%;
+    }
 
+    /* aside rules */
+    aside {
+        text-align: left;
+    }
+    aside #aside-logo {
+        width: 100%;
+        height: auto;
+    }
+    aside>ul, aside>li {
+        text-align: left;
+    }
 
 
 

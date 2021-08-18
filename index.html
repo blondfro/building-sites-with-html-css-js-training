@@ -48,113 +48,131 @@
 </nav>
 
 <main id="main" class="clear-fix">
-    <div class="row limited">
-        <section class="column small-12">
-                <figure>
-                    <img
-                            src="images/banner.png"
-                            class="banner"
-                            alt="Bethany's Pie Shop Banner"
-                            width="1140" height="561"
-                    >
-                    <figcaption>Bethany in her pie shop</figcaption>
-                </figure>
+    <div class="row">
+        <section class="column small-12 med-2">
+            <aside id="leftMenu">
+                <a href="index.html">
+                    <img id="aside-logo" src="images/logo.png" alt="Bethany's Pie Shop logo">
+                </a>
+                <form
+                        action="pies-overview.html"
+                        enctype="application/x-www-form-urlencoded"
+                        method="GET"
+                >
+                    <label for="search">Search Pies</label>
+                    <input
+                            name="search"
+                            id="search"
+                            type="search"
+                            class="searchBox"
+                            placeholder="Search our store">
+                    <input type="submit">
+                </form>
+                <h4 id="sidebar-heading">Browse by Category</h4>
+                <ul>
+                    <li><a href="pies-overview.html">All Pies</a></li>
+                    <li><a href="./category-pages/cheesecakes.html">Cheese cakes</a></li>
+                    <li><a href="./category-pages/fruit-pies.html">Fruit pies</a></li>
+                    <li><a href="./category-pages/seasonal-pies.html">Seasonal pies</a></li>
+                    <li><a href="#weekly-promotions">Weekly Promotions</a></li>
+                </ul>
+            </aside>
         </section>
-    </div>
-    <!-- end of row-->
 
-    <div class="row limited">
-        <h3>
-            Our Weekly Promotions
-        </h3>
-        <section class="column small-12 med-6 labeled">
-            <h4>Cheese Cake</h4>
-            <img src="images/products/cheesecake.jpg" alt="cheesecake" width="500" height="300">
-            <p>SALE: $6.99 - serves 4</p>
+        <section class="column small-12 med-10">
+            <div class="row limited">
+                <section class="column small-12">
+                    <figure>
+                        <img
+                                id="banner-img"
+                                src="images/banner.png"
+                                class="banner"
+                                alt="Bethany's Pie Shop Banner"
+                                width="1140" height="561"
+                        >
+                        <figcaption>Bethany in her pie shop</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <!-- end of row-->
+
+            <div class="row limited">
+                <article>
+
+
+                    <h1 class="welcome-text">Welcome to Bethany's Pie Shop!</h1>
+                    <p class="sub-title">
+                        From pecan to plum, our pies are made in with the warmth
+                        and traditional techniques.
+                        Take a moment to
+                        <a href="pies.html">Brouse our pies</a>
+                        and see which of our delectable
+                        deserts are soon to arrive on your doorstep.
+                    </p>
+                    <h2>Our History</h2>
+                    <p>
+                        For many years, <b>Bethany</b> has been baking the most delicious pies at
+                        her home. In 2013, we opened our first store in Brussels (Belgium)
+                        in a cosy little street near the Grand Market. People from all over the
+                        world fell in love with the soft cakes, heavenly cheese cakes, spicy
+                        apple pies...
+                        The store became a success in no time.
+
+                        <br>
+                        <br>
+                        In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop
+                        moved into a larger building. After receiving many requests, it became
+                        clear that our next step was making it possible to order pies from
+                        the comfort of your own home and from anywhere in the world.
+                        You are now looking at the result of this: our very own webstore,
+                        making it possible to order Bethany's delicious pies whenever you
+                        feel like it!
+                    </p>
+                    <p>
+                        Bethany is famous for using only the best ingredients. This way, we can
+                        make sure that our pies are absolutely the best.
+                    </p>
+                    <p>
+                        Download our full <a href="downloads/Price%20list.zip"> price list</a>
+                    </p>
+
+                    <hr>
+
+                </article>
+
+            </div>
+            <div class="row limited">
+                <h3 id="weekly-promotions">
+                    Our Weekly Promotions
+                </h3>
+                <section class="column small-12 med-6 labeled">
+                    <h4>Cheese Cake</h4>
+                    <img src="images/products/cheesecake.jpg" alt="cheesecake"
+                         width="500" height="300">
+                    <p>SALE: $6.99 - serves 4</p>
+                </section>
+                <section class="column small-12 med-6 labeled">
+                    <h4>Apple Pie</h4>
+                    <img src="images/products/apple-pie.jpg" alt="cheesecake"
+                         width="500" height="300">
+                    <p>SALE: $5.99 - serves 4</p>
+                </section>
+            </div>
+            <!-- end of row-->
         </section>
-        <section class="column small-12 med-6 labeled">
-            <h4>Apple Pie</h4>
-            <img src="images/products/apple-pie.jpg" alt="cheesecake" width="500" height="300">
-            <p>SALE: $5.99 - serves 4</p>
-        </section>
+
+
     </div>
-    <!-- end of row-->
+    <!-- end of row -->
+
+
 
 </main>
 
 <div>
-    <aside id="leftMenu">
-        <a href="index.html">
-            <img src="images/logo.png" alt="Bethany's Pie Shop logo">
-        </a>
-
-        <form
-                action="pies-overview.html"
-                enctype="application/x-www-form-urlencoded"
-                method="GET"
-        >
-            <label for="search">Search Pies</label>
-            <input
-                    name="search"
-                    id="search"
-                    type="search"
-                    class="searchBox"
-                    placeholder="Search our store">
-            <input type="submit">
-        </form>
-        <h4 id="sidebar-heading">Browse by Category</h4>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pies-overview.html">All Pies</a></li>
-            <li><a href="./category-pages/cheesecakes.html">Cheese cakes</a></li>
-            <li><a href="./category-pages/fruit-pies.html">Fruit pies</a></li>
-            <li><a href="./category-pages/seasonal-pies.html">Seasonal pies</a></li>
-            <li><a href="#weekly-promotions">Weekly Promotions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </aside>
-
-        <article>
 
 
-            <h1 class="welcome-text">Welcome to Bethany's Pie Shop!</h1>
-            <p class="sub-title">
-                From pecan to plum, our pies are made in with the warmth
-                and traditional techniques.
-                Take a moment to
-                <a href="pies.html">Brouse our pies</a>
-                and see which of our delectable
-                deserts are soon to arrive on your doorstep.
-            </p>
-            <h2>Our History</h2>
-            <p>
-                For many years, <b>Bethany</b> has been baking the most delicious pies at
-                her home.
-                In 2013, we opened our first store in Brussels (Belgium) in a cosy little street
-                near the Grand Market. People from all over the world fell in love with the soft
-                cakes, heavenly cheese cakes, spicy apple pies...
-                The store became a success in no time.
 
-                <br>
-                <br>
-                In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved
-                into a larger building. After receiving many requests, it became clear that our
-                next step was making it possible to order pies from the comfort of your own home
-                and from anywhere in the world. You are now looking at the result of this: our very
-                own webstore, making it possible to order Bethany's delicious pies whenever you
-                feel like it!
-            </p>
-            <p>
-                Bethany is famous for using only the best ingredients. This way, we can make sure
-                that our pies are absolutely the best.
-            </p>
-            <p>
-                Download our full <a href="downloads/Price%20list.zip"> price list</a>
-            </p>
-
-            <hr>
-
-        </article>
 
 
 </div>

@@ -42,6 +42,7 @@ body {
     width: 50%;
 }
 
+
 .limited {
     max-width: 1140px;
     margin: auto;
@@ -58,25 +59,21 @@ body {
 header {
     background-color: #9b87b8;
 }
-
 header img {
     float: left;
     height: 85px;
     padding-right: 10px;
 }
-
 header h1, header h2 {
     margin: 0;
     color: white;
     font-weight: 300;
     font-style: italic;
 }
-
 header h1 {
     padding: .5rem 0 0 0;
     font-size: 1.95rem;
 }
-
 header h2 {
     padding: .2rem 0 0 0;
     font-size: 1.05rem;
@@ -143,8 +140,7 @@ main img {
     width: 100%;
     height: auto;
 }
-
-main h1, main h2, main h3 {
+main h1, main h2, main h3, main h4 {
     color: #9b87b8;
     font-style: italic;
     margin: .5rem 0 .1rem 0;
@@ -157,8 +153,32 @@ main h3 {
     font-size: 1.2rem;
 }
 
-
-
+/* aside rules */
+aside {
+    padding-top: .8em;
+    text-align: center;
+}
+aside #aside-logo {
+    width: 50%;
+    height: auto;
+    padding-bottom: .8em;
+}
+aside>ul {
+    display: inline;
+}
+aside>ul, aside>li {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+aside>ul>li>a {
+    color: #1fac8c;
+    text-decoration: none;
+}
+aside>ul>li>a:hover {
+    color: #167464;
+}
 
 
 /*p {*/
@@ -304,19 +324,7 @@ main h3 {
 /*!*    display: block;*!*/
 /*!*}*!*/
 
-/*aside>ul, aside>li {*/
-/*    text-align: left;*/
-/*    font-weight: bold;*/
-/*    line-height: 1.5em;*/
-/*}*/
 
-/*aside>ul>li>a {*/
-/*    color: #1fac8c;*/
-/*}*/
-
-/*aside>ul>li>a:hover {*/
-/*    color: #167464;*/
-/*}*/
 
 
 /*aside>h4 {*/
